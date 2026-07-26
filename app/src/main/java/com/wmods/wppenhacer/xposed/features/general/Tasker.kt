@@ -66,7 +66,7 @@ class Tasker(loader: ClassLoader, preferences:SharedPreferences) : Feature(loade
     companion object {
         @JvmStatic
         fun sendTaskerEvent(name: String?, number: String?, event: String) {
-            val taskerEnabled = false
+            val taskerEnabled = true
             if (!taskerEnabled) return
 
             val intent = Intent("com.wmods.wppenhacer.EVENT")
